@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tetris Web</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Tetris</h1>
+
+  <div id="menu">
+    <label for="playerName">Nom du joueur :</label>
+    <input type="text" id="playerName" placeholder="Ton nom" />
+    <button onclick="startGame()">Jouer</button>
+  </div>
+
+  <div id="gameContainer" style="display: none;">
+    <canvas id="tetris" width="300" height="600"></canvas>
+    <div id="score">Score : 0</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
